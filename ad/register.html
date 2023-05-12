@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login with Tailwind</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="bg-gray-50 py-4">
+   <div class="px-9 ml-20">
+    <h2 class="text-blue-700 text-3xl font-semibold my-4 underline ">Create Your Account Here..</h2>
+
+    
+          <form class="w-full max-w-lg py-3">
+  <div class="flex flex-wrap -mx-3 mb-6 p-3">
+    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0 ">
+       <span class="details">First Name</span>
+      <input class="appearance-none block w-full bg-white-200 text-gray-700 border border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="fname" type="text" placeholder="Enter Your First Name">
+      
+    </div>
+    <div class="w-full md:w-1/2 px-3">
+       <span class="details">Last Name</span>
+      <input class="appearance-none block w-full bg-white-200 text-gray-700 border border-gray-500 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="lname" type="text" placeholder="Enter Your Last Name">
+    </div>
+    
+<div class="flex">
+    <div class="flex items-center mr-4">
+      <span class="details px-3">Gender &nbsp;&nbsp;</span>
+        <input id="inline-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+        <label for="inline-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Male</label>
+    </div>
+    <div class="flex items-center mr-4">
+        <input id="inline-2-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+        <label for="inline-2-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Female</label>
+    </div>
+    
+</div>
+
+    
+    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0 py-3">
+       <span class="details">Mobile No.</span>
+      <input class="appearance-none block w-full bg-white-200 text-gray-700 border border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="mno" type="text" placeholder="Enter Your Mobile No">
+      
+    </div>
+    <div class="w-full md:w-1/2 px-3 py-3">
+       <span class="details">Email Id</span>
+      <input class="appearance-none block w-full bg-white-200 text-gray-700 border border-gray-500 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="text" placeholder="Enter Your Email">
+    </div>
+    <div class="w-full md:w-1/2 px-3">
+            <span class="details">Password</span>
+           <input class="appearance-none block w-full bg-white-200 text-gray-700 border border-gray-500 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 " id="pswd" type="password" placeholder="Enter Your Password">
+          </div>
+          <div class="w-full md:w-1/2 px-3">
+            <span class="details">Confirm Password</span>
+           <input class="appearance-none block w-full bg-white-200 text-gray-700 border border-gray-500 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 " id="r-pswd" type="password" placeholder="Re-Enter Your Password">
+          </div>
+
+    <div class="flex items-center px-3 py-4">
+    <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+    <label for="link-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 dark:text-blue-500 hover:underline">terms and conditions</a>.</label>
+  </div>
+</div>
+    <div class="flex justify-center">
+        <a href="book.html" target="_blank">
+        <button class="inline-flex text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"><b><i>Submit</i></b></button>
+       </a>
+      </div>
+
+
+<p class="mb-0 mt-2 pt-1 text-sm font-semibold px-3">
+              Already have an account?
+              <a
+                href="#!"
+                class="text-danger transition duration-150 ease-in-out hover:text-blue-600 focus:text-blue-600 active:text-red-700"
+                ><u>Login</u></a>
+                <a href="book.html" target="_blank">
+            </p>
+
+           
+         
+  </div>
+  </body>
+</html>
